@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>日記を書く</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">共通のタイトル</h1>
+        <nav>
+            <div class="menu">
+                <a href="index.html">ホーム</a>
+                <a href="page1.html">ページ1</a>
+                <a href="page2.html">ページ2</a>
+                <a href="#" class="active">日記</a>
+                <!-- 必要に応じて他のリンクを追加 -->
+            </div>
+            <div class="counter">訪問者数: <span id="counter">0</span></div>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>日記を書く</h1>
+        <textarea id="diary-entry" rows="10" cols="50" placeholder="今日の出来事を書いてください..."></textarea>
+        <button onclick="saveDiary()">保存</button>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 あなたのウェブサイト. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="diary.js"></script>
+</body>
+</html>
